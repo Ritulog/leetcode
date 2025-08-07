@@ -7,10 +7,22 @@ class MergeIntervals {
   public static void main(String[] args) {
    int[][] intervals = {{1,4},{4,5}};
     int[][] intervals1 = {{1,3},{2,6},{8,10},{15,18}};
+    // Call merge and print the result for intervals
+    System.out.println("Merged intervals:");
+    int[][] merged = merge(intervals);
+    for (int[] interval : merged) {
+      System.out.println(Arrays.toString(interval));
+    }
 
+    // For second test case
+    System.out.println("Merged intervals1:");
+    int[][] merged1 = merge(intervals1);
+    for (int[] interval : merged1) {
+      System.out.println(Arrays.toString(interval));
+    }
   }
 
-  int[][] merge(int[][] intervals) {
+  static int[][] merge(int[][] intervals) {
 
     if (intervals.length <= 1)
       return intervals;
