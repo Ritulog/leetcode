@@ -1,5 +1,3 @@
-package leetcode.easy;
-
 import java.util.Arrays;
 
 public class LongestCommonPrefix {
