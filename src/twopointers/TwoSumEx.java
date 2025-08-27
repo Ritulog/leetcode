@@ -1,7 +1,15 @@
 package twopointers;
 
 class TwoSumEx {
-    public int[] twoSum(int[] numbers, int target) {
+    public static void main(String[] args) {
+        int[] numbers = {2,7,11,15};
+        int target = 9;
+        int[] index = twoSum(numbers, target);
+        for( int idx : index){
+            System.out.println(idx);
+        }
+    }
+    static int[] twoSum(int[] numbers, int target) {
         int left = 0; 
         int right = numbers.length - 1;
 

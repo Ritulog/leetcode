@@ -1,8 +1,13 @@
 package twopointers;
 
 public class IsSubsequence {
+  public static void main(String[] args) {
+    String s = "abc";
+    String t = "ahbgdc";
+    System.out.println(isSubsequence(s, t));
+  }
 
-  boolean isSubsequence(String str1, String str2) {
+ static boolean isSubsequence(String str1, String str2) {
 
     // Initialize pointers for both strings
     int i = 0;
