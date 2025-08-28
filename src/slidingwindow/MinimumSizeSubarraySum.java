@@ -1,8 +1,13 @@
 package slidingwindow;
 
 public class MinimumSizeSubarraySum {
+  public static void main(String[] args) {
+    int target = 7;
+    int[] nums = {2,3,1,2,4,3};
+    System.out.println(minSubArrayLen(target, nums));
+  }
 
-  int minSubArrayLen(int target, int[] nums) {
+  static int minSubArrayLen(int target, int[] nums) {
 
     int minLenWindow = Integer.MAX_VALUE;
     int currentSum = 0;
