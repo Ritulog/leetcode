@@ -28,7 +28,7 @@ public class MinimumSizeSubarraySum {
 
 
 
-//
+// sliding window and two pointers
   static int minSubArrayLen(int target, int[] nums) {
 
     int minLenWindow = Integer.MAX_VALUE;

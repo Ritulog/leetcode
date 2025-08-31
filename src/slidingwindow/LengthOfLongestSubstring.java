@@ -32,7 +32,6 @@ class LengthOfLongestSubstring {
         return (maxLen == Integer.MIN_VALUE) ? 0 : maxLen;
     }
 
-
     //using map
     static int lengthOfLongestSubstring1(String s) {
         int windowStart = 0;
